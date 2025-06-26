@@ -1,0 +1,27 @@
+/* Add these styles to your CSS file if needed */
+@keyframes pulse {
+    0%,
+    100% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .form-group:focus-within label {
+    color: #8b5cf6; /* purple-500 */
+  }
+  
+  /* Custom autofill styles */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #f9fafb inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  

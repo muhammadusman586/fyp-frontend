@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background: linear-gradient(to right, #bfdbfe, #e9d5ff); /* blue-100 to purple-100 */
+  color: #fff;
+}
+
+input,
+textarea {
+  color: #000;
+}

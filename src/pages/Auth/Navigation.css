@@ -1,0 +1,62 @@
+/* Ensure the nav items expand properly on hover */
+#navigation-container:hover .nav-item-name {
+  display: block;
+}
+
+/* Smooth transition for nav items */
+.nav-item-name {
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Cart badge styling */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Active indicator animation */
+.nav-indicator {
+  position: absolute;
+  right: 0;
+  width: 3px;
+  height: 0;
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 4px 0 0 4px;
+  transition: height 0.3s ease;
+}
+
+/* Show indicator on active/hover */
+.active .nav-indicator,
+.nav-link:hover .nav-indicator {
+  height: 24px;
+}
+
+/* Ensure proper z-index for dropdown */
+.dropdown-menu {
+  z-index: 50;
+}
+
+/* Mobile menu transition */
+.mobile-menu {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Prevent body scroll when mobile menu is open */
+.body-no-scroll {
+  overflow: hidden;
+}
